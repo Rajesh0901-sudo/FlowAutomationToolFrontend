@@ -1,16 +1,22 @@
 import React from 'react';
-import AddEnvConfig from './AddEnvConfig';
-import AddCustomerDetails from './AddCustomerDetails';
-import RunQuery from './RunQuery';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import Layout from './components/Layout';
+import AddEnvConfig from './components/AddEnvConfig';
+import AddCustomerDetails from './components/AddCustomerDetails';
+import RunQuery from './components/RunQuery';
+import QueryStatus from './components/QueryStatus';
 
 const App = () => {
   return (
-    <div>
-      <h1>Flow Automation Tool</h1>
-      <AddEnvConfig />
-      <AddCustomerDetails />
-      <RunQuery />
-    </div>
+    <Provider store={store}>
+      <Layout>
+        <AddEnvConfig />
+        <AddCustomerDetails />
+        <RunQuery />
+        <QueryStatus />
+      </Layout>
+    </Provider>
   );
 };
 
