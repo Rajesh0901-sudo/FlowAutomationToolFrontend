@@ -1,0 +1,140 @@
+.navbar_expanded_wrapper_div nav{
+
+  background: #212529;
+  height: 4em;
+}
+
+.navbar_logo_div,.navbar_logo_div_mobile{
+  width: 3em;
+  height: 3em;
+  background: white;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  img{
+    display: block;
+    width: 2em;
+    margin: auto;
+    border-radius: 20%;
+    padding-top: 0.5em;
+  }
+}
+.navbar_logo_div_mobile{
+  
+  display: block;
+  margin: auto;
+  box-shadow: none;
+  width: 9em;
+  height: 9em;
+
+  img{
+    width: 8em;
+  }
+
+}
+
+.navbar_wrapper_div{
+
+  background: #284B63;
+  height: 4em;
+}
+
+.sidebar_link_div{
+
+  li .MuiButtonBase-root{
+    background-color: #D9D9D9;
+    margin: 0.3em;
+    border-radius: 5px;
+    display: flex;
+    
+  }
+
+
+
+  .navbar-item{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 25%;
+  
+    .link_div{
+      display: flex;
+      align-items: center;
+      text-transform: capitalize !important;
+    }
+    .MuiSvgIcon-root{
+      margin-right: 10px;
+    }
+  
+  }
+
+  .navbar-item.active{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 1px 0px 4px 1px #e1e5fd inset;
+  }
+
+
+
+}
+
+
+.expanded_navbar_div{
+
+  .navbar-item{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 30px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+  
+    .link_div{
+      display: flex;
+      align-items: center;
+      text-transform: capitalize !important;
+    }
+    .MuiSvgIcon-root{
+      margin-right: 10px;
+    }
+
+    &:hover{
+      color: black;
+      box-shadow: 1px 0px 7px 1px #e1e5fd inset;
+      background: white;
+      transition: 0.2s ease-in-out;
+    }
+    
+  
+  }
+
+  .navbar-item.active{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 1px 0px 7px 1px #e1e5fd inset;
+  }
+
+}
+
+.name_div_navbar{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  font-size: 24px;
+}
+.name_div_navbar_collapsed{
+  position: absolute;
+  right: 0px;
+  font-size: 21px;
+}

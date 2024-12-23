@@ -1,0 +1,218 @@
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+
+
+    .section_heading{
+        border:1px solid;
+        padding:2px 15px;
+        border-radius:5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_contents{
+        display: flex;
+
+        img{
+            width: 20px; 
+            margin-right: 5px;
+            filter: invert(94%) sepia(5%) saturate(37%) hue-rotate(343deg) brightness(92%) contrast(95%);
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #d9d9d9;
+
+        h4{
+            padding: 2px 15px;
+            border-radius: 5px;
+            transition: 0.2s ease-in-out;
+    
+           
+        }
+
+        &:hover{
+            transition: 0.2s ease-in-out;
+
+            h4{
+                background: #d9d9d9;
+                color: black;
+                box-shadow: 1px 0px 7px 1px #e1e5fd inset;
+               
+            }
+
+            img{
+        
+                filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+                
+            }
+        }
+    }
+
+    .footer_section_icon{
+        margin-top: -7px;
+        width: 100px;
+        z-index: 2876 !important;
+        position: relative;
+        border-radius: 50%;
+    }
+
+
+
+    .hero-banner-one [class*="bubble"] {
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1 !important;
+      }
+      .hero-banner-one [class*="bubble"]:before {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+      }
+      .hero-banner-one{
+    
+        .bubble-one {
+            width: 120px;
+            height: 120px;
+            left: 14%;
+            top: 15%;
+            animation: rotated 12s infinite linear;
+    
+            &:before{
+    
+                
+                width: 12px;
+                height: 12px;
+                background: #fac3ff;
+                top: 0;
+                left: 50%;
+                  
+    
+            }
+        }
+    
+      } 
+    
+      .hero-banner-one .bubble-two {
+        width: 160px;
+        height: 160px;
+        top: 0;
+        left: 15%;
+        animation: rotated 17s infinite linear;
+      }
+      .hero-banner-one .bubble-two:before {
+        width: 17px;
+        height: 17px;
+        background: #8fe9e0;
+        top: 50%;
+        right: 100%;
+      }
+      .hero-banner-one .bubble-three {
+        width: 120px;
+        height: 120px;
+        bottom: 3%;
+        left: 4%;
+        animation: rotated 12s infinite linear;
+      }
+      .hero-banner-one .bubble-three:before {
+        width: 16px;
+        height: 16px;
+        background: #ffd5ad;
+        bottom: 0;
+        left: 40%;
+      }
+      
+      .hero-banner-one .bubble-four {
+        width: 120px;
+        height: 120px;
+        right: 34%;
+        top: 5%;
+        animation: rotated 12s infinite linear;
+      }
+      .hero-banner-one .bubble-four:before {
+        width: 19px;
+        height: 19px;
+        background: #8fe9e1;
+        top: 0;
+        left: 60%;
+      }
+      .hero-banner-one .bubble-five {
+        width: 160px;
+        height: 160px;
+        bottom: 0;
+        right: 25%;
+        animation: rotated 17s infinite linear;
+      }
+      .hero-banner-one .bubble-five:before {
+        width: 12px;
+        height: 12px;
+        background: #ffd5ad;
+        bottom: 40%;
+        right: 0;
+      }
+      .hero-banner-one .bubble-six {
+        width: 80px;
+        height: 120px;
+        bottom: 50%;
+        right: 14%;
+        animation: rotated 12s infinite linear;
+      }
+      .hero-banner-one .bubble-six:before {
+        width: 22px;
+        height: 22px;
+        background: #fac3ff;
+        bottom: 0;
+        left: 50%;
+      }
+    
+
+    
+
+
+      
+    @-webkit-keyframes rotated {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    }
+    @keyframes rotated {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    }
+      
+}
+
+.footer_section.logo_div_footer{
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px)  {
+    .footer_main_wrapper{
+        .footer_main_wrapper_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        
+    }
+}

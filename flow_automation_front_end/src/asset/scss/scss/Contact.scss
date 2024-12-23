@@ -1,0 +1,44 @@
+ .contact_wrapper{
+
+    min-height: 100vh;
+    margin-bottom: 100px;
+    
+    .contact_button{
+
+        background-image: linear-gradient(to right top, #3c6e71, #33666f, #2c5d6c, #285468, #284b63);
+
+    }
+    
+
+    .contact_side_image_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+        .contact_side_image{
+
+            max-width: 300px;
+            margin-bottom: 0px;
+        }
+
+        .about_section_social_logo{
+            display: flex;
+            margin-top: 10px;
+
+            img{
+                width: 30px;
+                margin: 10px;
+            }
+        }
+
+    }
+    
+
+    .contact_form_div{
+        display: flex;
+        justify-content: center;
+    }
+
+}
