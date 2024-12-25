@@ -16,6 +16,7 @@ const RunQuery = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("QueryDetails",queryDetails)
     dispatch(runQuery(queryDetails));
   };
 
