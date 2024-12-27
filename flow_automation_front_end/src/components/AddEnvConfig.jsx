@@ -3,7 +3,7 @@ import { TextField, Button, Typography, Box, Grid2 } from '@mui/material';
 import { addEnvAPI } from '../services/api';
 
 const AddEnvConfig = () => {
-  const [envName, setEnvName] = useState('');
+
   const [configurations, setConfigurations] = useState({
     env_name:'',
     db_host: '',
