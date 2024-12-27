@@ -9,7 +9,9 @@ const RunQuery = () => {
   const [queryDetails, setQueryDetails] = useState({
     env_name: '',
     db_name: '',
-    flow_name: ''
+    flow_name: '',
+    document_path:'',
+    document_name:''
   });
 
   const dispatch = useDispatch();
@@ -54,6 +56,24 @@ const RunQuery = () => {
           label="Flow Name"
           name="flow_name"
           value={queryDetails.flow_name}
+          onChange={handleChange}
+          required
+          fullWidth
+          margin="normal"
+        />
+         <TextField
+          label="Path For Document: C:\Users\RAJESHS\Desktop\FlowAutomationTool\backend\Document"
+          name="document_path"
+          value={queryDetails.document_path}
+          onChange={handleChange}
+          required
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          label="Document Name like:newQuery.docx"
+          name="document_name"
+          value={queryDetails.document_name}
           onChange={handleChange}
           required
           fullWidth
