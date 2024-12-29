@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import { TextField, Button, Typography, Box } from '@mui/material';
+import { TextField, Button, Typography, Box,FormControlLabel,Checkbox } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { runQuery } from '../redux/actions/queryActions';
 
@@ -11,7 +11,8 @@ const RunQuery = () => {
     db_name: '',
     flow_name: '',
     document_path:'',
-    document_name:''
+    document_name:'',
+    toTakeCsv: false,
   });
 
   const dispatch = useDispatch();
@@ -23,11 +24,18 @@ const RunQuery = () => {
   };
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    console.log(e.target.name);
+
+
+
+    const { name, value,type,checked } = e.target;
+
     setQueryDetails((prevDetails) => ({
       ...prevDetails,
-      [name]: value
+      [name]: type === 'checkbox' ? checked : value
     }));
+
+    console.log(queryDetails)
   };
 
   return (
@@ -78,6 +86,16 @@ const RunQuery = () => {
           required
           fullWidth
           margin="normal"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              name="toTakeCsv"
+              checked={queryDetails.toTakeCsv}
+              onChange={handleChange}
+            />
+          }
+          label="Collect Data in CSV File"
         />
         <Button type="submit" variant="contained" color="primary" fullWidth>
           Run Query
