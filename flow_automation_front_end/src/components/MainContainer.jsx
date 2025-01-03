@@ -6,7 +6,7 @@ const Header = () => {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6">
-          Flow Automation Tool V1 Evidence Automator
+          Flow Automation Tool V1: Evidence Automator
         </Typography>
       </Toolbar>
     </AppBar>
